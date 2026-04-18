@@ -5,6 +5,9 @@
 ## Build generated
 build/
 DerivedData/
+*.xcworkspace
+xcuserdata/
+GoogleService-Info.plist
 
 ## Various settings
 *.pbxuser
