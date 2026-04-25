@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF77D4C52F93784A00540B16 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF77D4C42F93784A00540B16 /* FirebaseAnalytics */; };
+		BF77D4C72F93785600540B16 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF77D4C62F93785600540B16 /* FirebaseCrashlytics */; };
+		BFDE39DE2F9295660001D519 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BFDE39DD2F9295660001D519 /* FirebaseCore */; };
+		BFDE39E02F92956E0001D519 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = BFDE39DF2F92956E0001D519 /* FirebaseFunctions */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BFDE39CB2F9291060001D519 /* MovieZDTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieZDTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDE39DE2F9295660001D519 /* FirebaseCore in Frameworks */,
+				BF77D4C72F93785600540B16 /* FirebaseCrashlytics in Frameworks */,
+				BFDE39E02F92956E0001D519 /* FirebaseFunctions in Frameworks */,
+				BF77D4C52F93784A00540B16 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				BFDE39CD2F9291060001D519 /* MovieZDTV */,
+				BFDE39DC2F9295660001D519 /* Frameworks */,
 				BFDE39CC2F9291060001D519 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,13 @@
 				BFDE39CB2F9291060001D519 /* MovieZDTV.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFDE39DC2F9295660001D519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +84,10 @@
 			);
 			name = MovieZDTV;
 			packageProductDependencies = (
+				BFDE39DD2F9295660001D519 /* FirebaseCore */,
+				BFDE39DF2F92956E0001D519 /* FirebaseFunctions */,
+				BF77D4C42F93784A00540B16 /* FirebaseAnalytics */,
+				BF77D4C62F93785600540B16 /* FirebaseCrashlytics */,
 			);
 			productName = MovieZDTV;
 			productReference = BFDE39CB2F9291060001D519 /* MovieZDTV.app */;
@@ -78,7 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					BFDE39CA2F9291060001D519 = {
 						CreatedOnToolsVersion = 26.3;
@@ -94,6 +117,9 @@
 			);
 			mainGroup = BFDE39C22F9291060001D519;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BFDE39CC2F9291060001D519 /* Products */;
 			projectDirPath = "";
@@ -182,6 +208,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 26.2;
@@ -238,6 +265,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = appletvos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				TVOS_DEPLOYMENT_TARGET = 26.2;
 				VALIDATE_PRODUCT = YES;
@@ -260,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZukyDeveloper.MovieZDTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zukydeveloper.ZDMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZukyDeveloper.MovieZDTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zukydeveloper.ZDMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -322,6 +350,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF77D4C42F93784A00540B16 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BF77D4C62F93785600540B16 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		BFDE39DD2F9295660001D519 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BFDE39DF2F92956E0001D519 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFDE39DB2F9294A50001D519 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDE39C32F9291060001D519 /* Project object */;
 }
