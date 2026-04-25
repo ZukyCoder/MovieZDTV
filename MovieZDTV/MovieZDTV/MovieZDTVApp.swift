@@ -1,10 +1,3 @@
-//
-//  MovieZDTVApp.swift
-//  MovieZDTV
-//
-//  Created by Zuky on 17/04/2026.
-//
-
 import SwiftUI
 import FirebaseCore
 
@@ -17,7 +10,7 @@ struct MovieZDTVApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
     
