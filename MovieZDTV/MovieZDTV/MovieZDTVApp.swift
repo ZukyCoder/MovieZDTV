@@ -10,7 +10,7 @@ struct MovieZDTVApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Mainview()
+            MainView()
         }
     }
     

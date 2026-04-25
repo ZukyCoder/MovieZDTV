@@ -3,7 +3,7 @@
 import SwiftUI
 import Combine
 
-struct Mainview: View {
+struct MainView: View {
     @FocusState var belowFold:Bool
     
     var body: some View {
@@ -52,5 +52,5 @@ struct Mainview: View {
 }
 
 #Preview {
-    Mainview()
+    MainView()
 }

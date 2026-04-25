@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct StandarItem: View {
-    var backColor:Color
-        
+    var backColor: Color
+
     var body: some View {
-        VStack() {
+        VStack {
             Image("discovery_landscape")
                 .resizable()
-                .aspectRatio(250/375, contentMode: .fit)
-                .containerRelativeFrame(.horizontal, count: 6, spacing: 40)
+                .aspectRatio(250 / 375, contentMode: .fit)
                 .background(backColor)
                 .cornerRadius(50)
             Text("Borderless Portrait 1")
